@@ -10,9 +10,9 @@ function sumScore(input) {
 
         input[i].split("").forEach(element => {
             element === "O" ? count++ : count = 0;
-            sum += count;            
+            sum += count;
         });
-        
+
         console.log(sum);
     }
 }
