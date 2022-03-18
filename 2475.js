@@ -1,11 +1,16 @@
-// const input  = require("fs").readFileSync("/dev/stdin").toString().trim().split(" ");
+// const input  = require("fs").readFileSync("/dev/stdin").toString().split(" ");
 
-const input = "".toString().trim().split(" ");
+const input = "0 4 2 5 6".toString().split(" ");
 
-function countTheWordsInString(input) {
-    let answer = input[0] === "" ? 0 : input.length;
+function numberOfVerifications() {
+    let inputMap = input.map(x => Number(x * x));
+    let answer = 0;
 
-    console.log(answer);
+    inputMap.forEach(function(element) {
+        answer += Number(element);
+    });
+
+    console.log(answer % 10);
 }
 
-countTheWordsInString(input);
+numberOfVerifications(input);
