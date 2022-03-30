@@ -11,7 +11,6 @@ function zero(input) {
         } else if (input[i] === "0") {
             a.pop();
         }
-        // console.log(a);
     }
 
     if(a.length < 1) {
