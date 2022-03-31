@@ -3,7 +3,7 @@
 // const input = "4".toString().trim();
 // const input = "6".toString().trim();
 // const input = "9".toString().trim();
-const input = "11".toString().trim();
+// const input = "11".toString().trim();
 
 function sugerDelivery(input) {
     let kg = Number(input);
