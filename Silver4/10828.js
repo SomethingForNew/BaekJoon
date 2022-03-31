@@ -1,5 +1,5 @@
-// const input  = require("fs").readFileSync("/dev/stdin").toString().trim().split("\n");
-const input = require("fs").readFileSync("testCase/testCase.txt").toString().trim().split("\r\n");
+const input  = require("fs").readFileSync("/dev/stdin").toString().trim().split("\n");
+// const input = require("fs").readFileSync("testCase/testCase.txt").toString().trim().split("\r\n");
 
 function stack(input) {
     let stack  = [];
