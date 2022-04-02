@@ -4,8 +4,6 @@
 const input  = "0/0/1".toString().trim().split("/");
 
 function kda(input) {
-    console.log(input);
-
     let k = Number(input[0]);
     let d = Number(input[1]);
     let a = Number(input[2]);
