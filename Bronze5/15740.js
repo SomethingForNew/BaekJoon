@@ -1,12 +1,10 @@
-// 부분 합격(40점)
-// const input  = require("fs").readFileSync("/dev/stdin").toString().split(" ");
+// const input  = require("fs").readFileSync("/dev/stdin").toString().trim().split(" ");
 const input = "1 2".toString().split(" ");
-
 function aPlusB(input) {
-    let a = Number(input[0]);
-    let b = Number(input[1]);
+    let a = BigInt(input[0]);
+    let b = BigInt(input[1]);
 
-    console.log(a + b);
+    console.log((a + b).toString());
 }
 
 aPlusB(input);
