@@ -1,31 +1,31 @@
 // const input  = require("fs").readFileSync("/dev/stdin").toString().trim().split("\n");
-const input  = require("fs").readFileSync("testCase/testCase.txt").toString().trim().split("\r\n");
+const input  = require("fs").readFileSync("testCase/testCase.txt").toString().trim().split("\n");
 
 function groupWordsChecker(input) {
-    console.log(input);
+    let testCnt = input[0];
+    let answer = 0;
+    
+    for(let i = 1; i <= testCnt; i++) {
+        let tempArr = [];
+        let chk = true;
 
-    input.shift();
-
-    let temp   = [];
-    let answer = [];
-
-    for(let i = 0; i < input.length; i++) {
         for(let j = 0; j < input[i].length; j++) {
-            if(!temp.includes(input[i][j])) {
-                temp.push(input[i][j]);
-
-                if (temp[temp.length -1] !== input[i][j]) {
-                    
+            if(tempArr.indexOf(input[i][j]) === -1) {
+                tempArr.push(input[i][j]);
+            } else {
+                if(tempArr.indexOf(input[i][j]) !== tempArr.length - 1) {
+                    chk = false;
+                    break;
                 }
             }
-
         }
-        
-        temp = [];
+
+        if(chk) {
+            answer += 1;
+        }
     }
-    
-    console.log(temp);
-    console.log(temp.length);
+
+    console.log(answer);
 }
 
 groupWordsChecker(input);
