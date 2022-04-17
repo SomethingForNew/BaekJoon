@@ -10,6 +10,7 @@ function statistics(input) {
     let fourthAswer = sortTemp[sortTemp.length - 1] - sortTemp[0];
     let answerArry = [];
 
+    console.log();
 
 }
 
