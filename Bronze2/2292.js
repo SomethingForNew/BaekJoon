@@ -12,6 +12,16 @@ function honeycomb(input) {
     }
 
     console.log(j);
+
+    //-------------------------------------------//
+    // let count = 0;
+
+    // while(input > 1)  {
+    //     count++;
+    //     input -= 6 * count;
+    // }
+
+    // console.log(count + 1);
 }
 
 honeycomb(Number(input));
