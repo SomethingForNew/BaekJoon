@@ -1,5 +1,5 @@
-// const input  = require("fs").readFileSync("/dev/stdin").toString().split("\r\n");
-const input = require("fs").readFileSync("testCase/testCase.txt").toString().split("\r\n");
+// const input  = require("fs").readFileSync("/dev/stdin").toString().split("\n");
+const input = require("fs").readFileSync("testCase/testCase.txt").toString().split("\n");
 
 function getTotalScore(input) {
     let numArr = input.map(value => Number(value));
