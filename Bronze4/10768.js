@@ -11,6 +11,6 @@ const answer = (month, day) => {
         return "Before";
     if(day === 18)
         return "Special"
-                    }
+    }
 }
 console.log(answer(month, day));
