@@ -12,17 +12,17 @@ function aiTimer(input) {
 }
 
 function secToTime(totalSec) {
-    let hour = parseInt(totalSec/3600) < 10 ? '0'+ parseInt(totalSec/3600) : parseInt(totalSec/3600);
-    let min  = parseInt((totalSec%3600)/60) < 10 ? '0'+ parseInt((totalSec%3600)/60) : parseInt((totalSec%3600)/60);
+    let hour = parseInt(totalSec / 3600);
+    let min  = parseInt((totalSec % 3600) / 60);
     let seconds = totalSec % 60;
 
     if(hour === 24) {
         hour = 0; 
     } else if(hour > 24) {
-        hour = hour - 24;
+        hour = hour % 24;
     }
 
-    return console.log(hour, min, seconds);
+    return console.log(hour + " " + min + " " + seconds);
 }
 
 aiTimer(input);
