@@ -2,7 +2,7 @@
 const input  = require("fs").readFileSync("testCase/testCase.txt").toString().trim().split("\n");
 [n, ...testCases] = input;
 
-function findNumber(n ,testCases) {
+function bracket(n ,testCases) {
     for(let i = 0; i < n; i++) {
         const testCase = testCases[i];
         const tempStack = [];
@@ -26,4 +26,4 @@ function findNumber(n ,testCases) {
     }
 }
 
-findNumber(n, testCases);
+bracket(n, testCases);
