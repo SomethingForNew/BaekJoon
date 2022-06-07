@@ -1,4 +1,4 @@
-// const input  = require("fs").readFileSync("/dev/stdin").toString().split("\n");
+// const input  = require("fs").readFileSync("/dev/stdin").toString().trim();
 const input = "pulljima".toString().trim();
 
 function checkTheLength(input) {
