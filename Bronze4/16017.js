@@ -4,19 +4,7 @@ const input = require("fs").readFileSync("testCase/testCase.txt").toString().tri
 function telemarketerOrNot(input) {
     const [A, B, C, D] = input.split("\n").map(Number);
 
-    if(A === 8 || A === 9) {
-        if(B === C) {
-            if(D === 8 || D === 9) {
-                return "ignore";
-            } else {
-                return "answer";
-            }        
-        } else {
-            return "answer";
-        }
-    } else {
-        return "answer";
-    }
+    return A > 7 && B === C && D > 7 ? "ignore" : "answer";
 }
 
 console.log(telemarketerOrNot(input));
