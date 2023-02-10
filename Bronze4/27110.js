@@ -15,6 +15,6 @@ function chicken(input) {
     });
 
     return answer;
-}
+} 
 
 console.log(chicken(input));
