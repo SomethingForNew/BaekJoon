@@ -9,7 +9,8 @@ public class Main_11719 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String line;
 
-        while ((line = br.readLine()) != null) {
+//        while ((line = br.readLine()) != null) {
+        while ((line = br.readLine()).equals(null)) {
             System.out.println(line);
         }
     }
