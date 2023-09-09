@@ -8,9 +8,8 @@ const input = require("fs")
 function newTonAndApple(input) {
   const PINFO = input[0].split(" ");
   const [X, Y, R] = input[1].split(" ");
-  const ANSWER = PINFO.indexOf(X) + 1;
 
-  return ANSWER;
+  return PINFO.indexOf(X) + 1;
 }
 
 console.log(newTonAndApple(input));
