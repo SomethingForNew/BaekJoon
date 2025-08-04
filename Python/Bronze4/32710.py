@@ -7,7 +7,10 @@ def is_number_in_multipleication_table(n: int) -> int:
     구구단표의 A, B, C 값 중 하나라도 n과 일치하면 등장한것으로 간주합니다.
 
     Args:
-    targe
+        n: 구구단표에서 찾을 정수 (1 <= n <= 100)
+    
+    Returns:
+        주어진 정수가 구구단표에 등장하면 1, 아니면 0
     """
     for a in range(2, 10):
         for b in range(1, 10):
@@ -16,9 +19,7 @@ def is_number_in_multipleication_table(n: int) -> int:
             if n == a or n == b or n == a * b:
                 return 1
 
-
     return 0
-        
 
 def main():
     """
@@ -26,7 +27,6 @@ def main():
     입력을 받아 구구단 2단부터 9단까지에 해당하는 정수인지 확인하고
     해당하는 정수라면 1을 아니면 0을 출력한다.
     """
-
     try:
         n = int(sys.stdin.readline().strip())
         result = is_number_in_multipleication_table(n)
